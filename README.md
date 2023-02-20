@@ -1,2 +1,3 @@
-# dark-horizon-online
-The official website of the Dark Horizon robotics team.
+# Dark Horizon Robotics
+
+The official website of the dark horizon robotics team.
