@@ -6,7 +6,9 @@
 </script>
 
 <!-- page wrapper -->
-<section class="flex sm:flex-row flex-col h-[100vh]">
+<section class="flex sm:flex-row flex-col h-[100vh] {!drawerIsToggled
+	? 'overflow-auto'
+	: 'overflow-hidden'}">
 	<section
 		class="sm:h-full h-auto w-full sm:w-auto p-5 sm:border-r border-b border-stone-200 flex sm:flex-col justify-between items-center"
 	>
