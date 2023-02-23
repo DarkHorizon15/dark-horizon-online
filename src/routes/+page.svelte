@@ -1,5 +1,5 @@
 <script>
-	let drawerIsToggled = true;
+	let drawerIsToggled = false;
 	const toggleDrawer = () => {
 		drawerIsToggled = !drawerIsToggled;
 	};
