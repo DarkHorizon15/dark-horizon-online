@@ -6,9 +6,11 @@
 </script>
 
 <!-- page wrapper -->
-<section class="flex sm:flex-row flex-col h-[100vh] {!drawerIsToggled
-	? 'overflow-auto'
-	: 'overflow-hidden'}">
+<section
+	class="flex sm:flex-row flex-col h-[100vh] {!drawerIsToggled
+		? 'overflow-auto'
+		: 'overflow-hidden'}"
+>
 	<section
 		class="sm:h-full h-auto w-full sm:w-auto p-5 sm:border-r border-b border-stone-200 flex sm:flex-col justify-between items-center"
 	>
@@ -44,15 +46,21 @@
 			: 'opacity-25 pointer-events-auto'}"
 		on:click={toggleDrawer}
 	/>
-	
+
 	<!-- sidebar -->
 	<aside
-		class="transform top-0 right-0 w-96 bg-white fixed h-full overflow-auto ease-in-out transition-all border-l border-stone-200 duration-300 z-30 {drawerIsToggled
+		class="transform top-0 right-0 sm:w-96 w-4/6 bg-white fixed h-full overflow-auto ease-in-out transition-all border-l border-stone-200 duration-300 z-30 {drawerIsToggled
 			? '-translate-x-0'
 			: 'translate-x-full'}"
 	>
-	<div class="w-full p-5">
-		<h1>Content</h1>
-	</div>
+		<div class="w-full p-10">
+			<h1 class="text-2xl">Explore Our Site</h1>
+			<ul class="mt-10">
+				<li><a href="#_">About Us</a></li>
+				<li><a href="#_">Sponsorship Information</a></li>
+				<li><a href="#_">Accomplishments</a></li>
+				<li><a href="#_">About VEX</a></li>
+			</ul>
+		</div>
 	</aside>
 </section>
